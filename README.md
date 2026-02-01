@@ -100,3 +100,6 @@ Jean Lehmann - Cyber Capital HQ
 Based on the original research conducted at the IBM Zurich Research Laboratory.
 
 This repository serves as the home for the Harary Protocol specification and future open-source code.
+
+The mathematical proofs for the Harary Graph topology are derived from the author's original research at IBM Zurich. 
+The foundational thesis is available here: [docs/reference/Master Thesis IBM Jean Lehmann.pdf](https://github.com/jeanblehmann/DC-Net/blob/main/docs/reference/)
