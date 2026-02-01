@@ -21,15 +21,15 @@ The Harary Protocol addresses this by partitioning the network into manageable "
 
 ### 1. Linear Scalability via Sparse Graphs
 
-We utilize Harary graph constructions (based on the Erdős-Gallai theorem) to build the sparsest possible intra-pod topology that guarantees $k$-connectivity. This reduces communication complexity from Quadratic $O(N^2)$ to Linear $O(N)$, enabling Pods to scale to 1,000+ users.
+We utilize Harary graph constructions (based on the Erdős-Gallai theorem) to build the sparsest possible intra-pod topology that guarantees $c+1$-connectivity. This approach mathematically ensures resilience against $c$ colluding nodes while minimizing communication complexity and overhead from Quadratic $O(N^2)$ to Linear $O(N)$, enabling intra-Pod communication to scale to 1,000+ users.
 
 ### 2. Sybil Resistance via Economic Stake
 
-To prevent "cheap" identities from flooding the network, we integrate a Crypto-Economic Admission Layer. Users must prove ownership of funds or stake using Ring Signatures (similar to Monero) to join a Pod. This makes Sybil attacks economically prohibitive without compromising user anonymity.
+To prevent "cheap" identities from flooding the network, we integrate a Crypto-Economic Admission Layer. Users must prove ownership of funds or stake using Ring Signatures (similar to Monero) to join a Pod. This integration makes Sybil attacks economically prohibitive without compromising user anonymity.
 
 ### 3. Blind Aggregation over Finite Fields
 
-We employ a relay-based architecture where a server aggregates user inputs over a Finite Field ($\mathbb{F}_p$). This allows for high-throughput slot reservation and collision detection in $O(1)$ time, without the relay ever learning individual messages.
+We employ a relay-based architecture where a server aggregates user inputs over a Finite Field ($\mathbb{F}_p$). This architecture allows for high-throughput slot reservation and collision detection in $O(1)$ time, without the relay ever learning individual messages.
 
 ## III - Architecture
 
@@ -45,7 +45,7 @@ A server-side component that performs blind aggregation of inputs.
 
 ### 3. Inter-Pod Routing: 
 
-A global Mix-Network layer where entire Pods act as mix-nodes, mathematically hiding the final recipient.
+A global Mix-Network layer where entire Pods act as mix-nodes, mathematically hiding the relationship to the final recipient.
 
 ### 4. Finite Field Logic: 
 
