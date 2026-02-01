@@ -62,7 +62,7 @@ The Harary Protocol bridges the gap between the strong privacy of DC-Nets and th
 | Feature | Tor | Classical DC-Nets | Vuvuzela | **Harary Protocol** |
 | :--- | :--- | :--- | :--- | :--- |
 | **Anonymity Type** | Computational (Onion Routing) | Information-Theoretic | Computational (Noise) | **Information-Theoretic** |
-| **Scalability** | High (Millions) | Low (<100 users) | Medium | **High (Linear $O(N)$)** |
+| **Scalability** | High (Millions) | Low (<100 users) | Medium | **High-Linear $O(N)$** |
 | **Latency** | Low | Low | High (Seconds/Minutes) | **Low (Algebraic Logic)** |
 | **Traffic Analysis**| Vulnerable to Correlation | Resistant | Resistant | **Resistant** |
 | **Sybil Defense**| Centralized Directory | None (Assumed Trust) | None | **Crypto-Economic (PoS)** |
