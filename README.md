@@ -95,7 +95,7 @@ Documentation & Developer Testing
 
 ## VI - Authors & Contact
 
-Jean Lehmann - Cyber Capital HQ
+Jean Lehmann - [Cyber Capital HQ](https://www.cybercapitalhq.com)
 
 Based on the original research conducted at the IBM Zurich Research Laboratory.
 
